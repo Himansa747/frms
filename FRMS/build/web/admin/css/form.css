@@ -1,0 +1,120 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+    font-family: verdana;
+}
+
+#mainForm{
+	background-image: url("../../images/formbackground.jpg");
+	background-repeat:no-repeat ;
+	color: white;
+	background-size: 700px 500px;
+    padding: 150px;
+}
+
+#mainForm  table , td{
+	padding: 15px;
+	font-size: 20px;
+	font-family: verdana;
+}
+
+.basicButton{
+	background-color: #c7d4ea;
+	padding: 10px 32px;
+	color: black;
+	border:none;
+	cursor: pointer; 
+	display: inline-block;
+	font-size: 20px;
+}
+
+.inputField{
+	width: 300px;
+	height: 25px;
+}
+
+
+.activeButton{
+	background-color: #37ed34;
+	padding: 10px 32px;
+	color: black;
+	border:none;
+	cursor: pointer; 
+	display: inline-block;
+	font-size: 20px;
+    margin: 5px;
+}
+
+.warnButton{
+    background-color: #ffc700;
+    padding: 10px 32px;
+    color: black;
+    border:none;
+    cursor: pointer; 
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.warnButton1{
+    background-color: #ffc777;
+    padding: 10px 32px;
+    color: black;
+    border:none;
+    cursor: pointer; 
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+    .model{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(0,9,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 70px;
+        width: 100%;
+        height: 100%;
+        font-family: verdana;
+    }
+
+    .model-content{
+            background-color: #dbd4ba;
+            border: 1px solid #888;
+            width: 80%;
+            margin: 10%
+    }
+
+    .close{
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #FF0000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .close:hover,.close:focus{
+        color: red;
+        cursor: pointer;
+        background-color: white;
+    }
+
+#helloLabel{
+    background-color: #2598fc;
+    padding: 10px 32px;
+    color: black;
+    border:none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+    float: right;
+    padding-left: 20%;
+    font-family: verdana;
+}
+  

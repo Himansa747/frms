@@ -1,0 +1,83 @@
+.navbar-light .navbar-brand {
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  font-family:Poppins;
+  background-color:#fff;
+}
+
+.brnlog {
+  font-weight:500;
+}
+
+body {
+  background-color:#eaeaea;
+}
+
+.justify-content-center {
+  text-align:center;
+}
+
+.h4, h4 {
+  text-align:center;
+}
+
+.col-md-3.align-items-center {
+}
+
+.h4, h4 {
+}
+
+.col-md-3.align-items-center.align-content-center {
+  border-radius:10px;
+  background-color:;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  box-shadow:0px 0px 4px grey;
+}
+
+\ {
+}
+
+.btn:not(:disabled):not(.disabled) {
+  border:none;
+}
+
+.table-container {
+  width:87%;
+  text-align:center;
+  display:inline-block;
+    margin-top: 
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  text-align:center;
+}
+
+.table-responsive {
+  border-radius:10px;
+  border:0;
+  border-spacing:2px;
+  -webkit-font-smoothing:antialiased;
+}
+
+tr {
+  background-color:#fff;
+}
+
+
+
+.onebtn:hover{
+    background-color: #b721ff;
+    color: #fff;
+}
+
+.onebtn{
+  transition: all 0.4s; 
+    width:100%;
+    background-color:#73c2fb;
+    font-weight: 500;
+    height:100%;
+    font-size: 17px;
+}

@@ -1,0 +1,18 @@
+SMAP
+mlrsearch_jsp.java
+JSP
+*S JSP
+*F
++ 0 mlrsearch.jsp
+Reports/Medico Legal Report/mlrsearch.jsp
+*L
+5,21:49
+26,17:71
+42,62:88
+104,8:151
+111,3:159
+114,7:162,3
+121,8:183
+129,6:192
+134,31:198
+*E

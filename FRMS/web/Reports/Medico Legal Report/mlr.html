@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRMS1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand brnlog" href="#"><img src="assets/img/favicon.png" data-bs-hover-animate="shake" style="height:44px;">&nbsp;<strong>Forensic Report Management System</strong></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">View&nbsp;<i class="fa fa-angle-down"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">User name&nbsp;<i class="fa fa-user-circle-o"></i>&nbsp;<i class="fa fa-angle-down"></i></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div style="margin-top:29px;"></div>
+    <div class="contact-clean">
+        <form method="post" action="/MLRController" style="width:600px;">
+            <h2 class="text-center">MEDICO LEGAL REPORT</h2>
+            <h6 class="text-left">Serial No :-</h6>
+            <div class="form-group"><input class="form-control" type="text" name="" placeholder="Name" style="margin:0px 0px 5px 0px;">
+                <h6 class="text-left">Medico Legal Form No. :-</h6><input class="form-control" type="text" name="fnum" placeholder="Name">
+                <h6 class="text-left">Magistrate's Court :-</h6><input class="form-control" type="text" name="court" placeholder="Name">
+                <h6 class="text-left">Date of Issue :-</h6><input class="form-control" type="text" name="doi" placeholder="Name">
+                <h6 class="text-left">Case No.:-</h6><input class="form-control" type="text" name="cnum" placeholder="Name">
+                <h6 class="text-left">Police Station :-</h6><input class="form-control" type="text" name="station" placeholder="Name">
+                <h6 class="text-left">Date of Trial:-</h6><input class="form-control" type="text" name="dot" placeholder="Name"></div>
+            <div class="form-group"><small class="form-text text-danger"></small></div>
+        </form>
+        <form method="post" style="width:600px;">
+            <h5 class="text-left">(A) IDENTIFICATION</h5>
+            <h6 class="text-left">Full Name :-</h6>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" style="margin:0px 0px 5px 0px;">
+                <h6 class="text-left">Age :-</h6><input class="form-control" type="text" name="age" placeholder="Name">
+                <h6 class="text-left">Sex :-</h6><input class="form-control" type="text" name="sex" placeholder="Name">
+                <h6 class="text-left">Address :-</h6><input class="form-control" type="text" name="addr" placeholder="Name">
+                <h6 class="text-left">Place of examination :-</h6><input class="form-control" type="text" name="place" placeholder="Name">
+                <h6 class="text-left">Date :-</h6><input class="form-control" type="text" name="doe" placeholder="Name">
+                <h6 class="text-left">Date of Admission to Hospital :-</h6><input class="form-control" type="text" name="doa" placeholder="Name">
+                <h6 class="text-left">Time :-</h6><input class="form-control" type="text" name="toa" placeholder="Name">
+                <h6 class="text-left">Date of Discharge :-</h6><input class="form-control" type="text" name="dod" placeholder="Name">
+                <h6 class="text-left">Bead Head Ticket No. :-</h6>
+            </div><input class="form-control" type="text" name="bnum" placeholder="Name">
+            <div class="form-group"><small class="form-text text-danger"></small></div>
+        </form>
+        <form method="post" style="width:600px;">   
+            <h5 class="text-left">(B) SHORT HISTORY GIVEN BY PATIENT</h5>
+            <h6 class="text-left">Short History Given By Patient :-</h6>
+            <div class="form-group"><textarea class="form-control" rows="14" name="short"></textarea></div>
+            <div class="form-group"><small class="form-text text-danger"></small></div>
+        </form>
+        <form method="post" style="width:600px;">
+            <h5 class="text-left">(C) INJURIES</h5>
+            <h6 class="text-left">Injuries :-</h6>
+            <div class="form-group"><textarea class="form-control" rows="14" name="inj"></textarea>
+                <h6 class="text-left">Special Investigations (X-rays ,etc. ) :-</h6><input class="form-control" type="text" name="spin" placeholder="Name"></div>
+            <h6 class="text-left">Injuries:-</h6>
+            <div class="form-group"><small class="form-text text-danger"></small></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nature, Size, Shape, Disposition &amp; Site of Injury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="form-control inj" type="text" name="inj1" /></td>
+                            <td><input class="form-control inj" type="text" name="desc1" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control inj" type="text" name="inj2" /></td>
+                            <td><input class="form-control inj" type="text" name="desc2" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control inj" type="text" name="inj3" /></td>
+                            <td><input class="form-control inj" type="text" name="desc3" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control inj" type="text" name="inj4" /></td>
+                            <td><input class="form-control inj" type="text" name="desc4" /></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </form>
+        <form method="post" style="width:600px;">
+            <h5 class="text-left">(D) OPINION</h5>
+            <h6 class="text-left"></h6>
+            <div class="form-group">
+                <h6 class="text-left">Non-Grevious Injuries (Nos.) :-</h6><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Grievous Injuries (Nos.)</th>
+                            <th>Limb Under Section 311 of Penal Code&nbsp;</th>
+                            <th>Explanatory Remarks if Any</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="form-control ginj" type="text" name="ginj1" /></td>
+                            <td><input class="form-control ginj" type="text" name="lus1" /></td>
+                            <td><input class="form-control ginj" type="text" name="rem1" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control ginj" type="text" name="ginj2" /></td>
+                            <td><input class="form-control ginj" type="text" name="lus2" /></td>
+                            <td><input class="form-control ginj" type="text" name="rem2" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control ginj" type="text" name="ginj3" /></td>
+                            <td><input class="form-control ginj" type="text" name="lus3" /></td>
+                            <td><input class="form-control ginj" type="text" name="rem3" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control ginj" type="text" name="ginj4" /></td>
+                            <td><input class="form-control ginj" type="text" name="lus4" /></td>
+                            <td><input class="form-control ginj" type="text" name="rem4" /></td>
+                        </tr>
+                        <tr>
+                            <td><input class="form-control ginj" type="text" name="ginj5" /></td>
+                            <td><input class="form-control ginj" type="text" name="lus5" /></td>
+                            <td><input class="form-control ginj" type="text" name="rem5" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h6 class="text-left">Injuries Sufficent In The Course of Nature to Cause Death (Nos.) :-</h6>
+            <div class="form-group"><small class="form-text text-danger"></small></div><input class="form-control" type="text" name="name" placeholder="Name">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+        <form method="post" style="width:600px;">
+            <h5 class="text-left">(D) INJURIES CAUSED BY</h5>
+            <h6 class="text-left"></h6>
+            <div class="form-group">
+                <h6 class="text-left">(a)Blunt Weapon (Nos.) :-</h6><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <h6 class="text-left">Cut(Nos.) :-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <h6 class="text-left">(b)Sharp Cutting Instrument :-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <h6 class="text-left">Stab(Nos):-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <h6 class="text-left">(c)Firearms (Nos.):-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <h6 class="text-left">(d)Burns (Nos.):-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <h6 class="text-left">(e)Bites (Nos.):-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </form>
+        <form method="post" style="width:600px;">
+            <h5 class="text-left">(E) Liquor&nbsp;</h5>
+            <h6 class="text-left"></h6>
+            <div class="form-group">
+                <h6 class="text-left">(a)Patient Smelling of liquor :-</h6><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <h6 class="text-left">(b)Under Influence of liquor :-</h6><input class="form-control" type="text" name="name" placeholder="Name"></form>
+        <form method="post" style="width:600px;">
+            <h5 class="text-left">(E) Doctor's Details</h5>
+            <h6 class="text-left"></h6>
+            <div class="form-group">
+                <h6 class="text-left">(a)Name of the medical officer &amp; qualifications :-</h6><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <h6 class="text-left">(b)Designation :-</h6><input class="form-control" type="text" name="name" placeholder="Name">
+            <h6 class="text-left">(c)Date :-</h6><input class="form-control" type="date"><button class="btn btn-primary" type="button">SUBMIT FORM</button></form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+</body>
+
+</html>
